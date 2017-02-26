@@ -1,0 +1,17 @@
+.nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 28px 0 0;
+
+    &__item {
+        list-style: none;
+        float: left;
+        margin: 0 35px 0 0;
+
+        a {
+            color: #a0a0a9;
+            text-decoration: none;
+        }
+    }
+}

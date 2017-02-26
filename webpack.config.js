@@ -8,8 +8,14 @@ module.exports = {
     },
     module: {
         rules: [ {
-            test: /\.css$/,
-            use: "style-loader!css-loader!sass-loader"
+            test: /\.css|scss$/,
+            use: [ {
+                loader: "style-loader"
+            }, {
+                loader: "css-loader"
+            }, {
+                loader: "sass-loader"
+            } ]
         }, {
             test: /\.js|jsx$/,
             exclude: /node_modules/,
@@ -37,6 +43,11 @@ module.exports = {
     devServer: {
         contentBase: path.join( __dirname, "" ),
         compress: true,
-        port: 8080
-    }
+        port: 8080,
+        watchOptions: {
+            aggregateTimeout: 300,
+            poll: true
+        }
+    },
+    watch: true
 }
