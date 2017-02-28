@@ -1,0 +1,45 @@
+.chats {
+
+    &__item {
+        height: 106px;
+        border-bottom: 1px solid #eaeaed;
+
+        &:first-child {
+            border-top: 1px solid #eaeaed;
+        }
+    }
+
+    &__avatar {
+        width: 56px;
+        height: 56px;
+        background: #000;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 25px;
+    }
+
+    &__info {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__username {
+        font-size: 15px;
+        color: #1b1b27;
+        margin: 0 10px 0 0;
+        display: inline-block;
+    }
+
+    &__date {
+        font-size: 15px;
+        color: #888891;
+        display: inline-block;
+    }
+
+    &__last-message {
+        margin: 12px 0 0;
+        color: #1b1b27;
+        font-size: 15px;
+    }
+}

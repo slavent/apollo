@@ -1,0 +1,95 @@
+.switcher {
+    box-shadow: 0 0 0 1px #eaeaed, 0 1px 0 0 #dfdfe3;
+
+    &__header {
+        background: #fbfbfc;
+        height: 65px;
+        border-radius: 2px;
+        box-shadow: 0 1px 0 0 #eaeaed;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        &-item {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #888891;
+            margin: 0 0 0 30px;
+            display: inline-block;
+            line-height: 65px;
+            position: relative;
+            cursor: pointer;
+
+            &.active {
+                color: #1b1b27;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background: #f64a35;
+                }
+            }
+        }
+    }
+
+    &__body {
+        background: #fff;
+
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+            width: 100%;
+        }
+    }
+
+    &__box {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.sidebar {
+    width: 400px;
+    border-right: 1px solid #eaeaed;
+    float: left;
+}
+
+.content {
+    margin: 0 0 0 400px;
+}
+
+.chat {
+    padding: 30px;
+}
+
+.messages {
+    padding: 0 0 0 80px;
+}
+
+.message {
+    margin: 0 0 15px 0;
+    position: relative;
+    width: 90%;
+    line-height: 1.6;
+
+    &__text {
+        font-size: 15px;
+        color: #1b1b27;
+    }
+
+    &__time {
+        font-size: 15px;
+        color: #888891;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

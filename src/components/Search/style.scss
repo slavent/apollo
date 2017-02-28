@@ -1,0 +1,27 @@
+.searсh {
+    height: 60px;
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+        background: #000;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+    }
+
+    &__title {
+        display: inline-block;
+        vertical-align: middle;
+        color: #888891;
+        font-size: 15px;
+    }
+}
+
+.search:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+    margin: 0 0 0 -1px;
+}
